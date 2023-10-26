@@ -17,7 +17,7 @@ class TestStatementCoverage(unittest.TestCase):
         # Test for a scalene triangle (Triangle.Type.SCALENE)
         result = Triangle.classify(3, 4, 5)
         self.assertEqual(result, Triangle.Type.SCALENE)
-s
+
 
 if __name__ == '__main__':
     unittest.main()
