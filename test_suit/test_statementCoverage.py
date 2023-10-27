@@ -18,6 +18,21 @@ class TestStatementCoverage(unittest.TestCase):
         result = Triangle.classify(3, 4, 5)
         self.assertEqual(result, Triangle.Type.SCALENE)
 
+    def test_isosceles_triangle1(self):
+        # Test for an isosceles triangle (Triangle.Type.ISOSCELES)
+        result = Triangle.classify(2, 2, 3)
+        self.assertEqual(result, Triangle.Type.ISOSCELES)
+
+    def test_isosceles_triangle2(self):
+        # Test for an isosceles triangle (Triangle.Type.ISOSCELES)
+        result = Triangle.classify(2, 3, 2)
+        self.assertEqual(result, Triangle.Type.ISOSCELES)
+
+    def test_isosceles_triangle3(self):
+        # Test for an isosceles triangle (Triangle.Type.ISOSCELES)
+        result = Triangle.classify(3, 2, 2)
+        self.assertEqual(result, Triangle.Type.ISOSCELES)
+
 
 if __name__ == '__main__':
     unittest.main()
