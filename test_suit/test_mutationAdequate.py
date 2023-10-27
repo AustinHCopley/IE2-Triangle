@@ -18,7 +18,25 @@ class TestMutationAdequate(unittest.TestCase):
         result = Triangle.classify(2, 2, 3)
         self.assertNotEqual(result, Triangle.Type.ISOSCELES)
 
-    # Add more test cases for other types of mutants
+    def test_mutant_4(self):
+        self.assertNotEqual(Triangle.classify(-1, 2, 2), Triangle.Type.INVALID)
+
+    def test_mutant_5(self):
+        self.assertNotEqual(Triangle.classify(1, 2, 2), Triangle.Type.INVALID)
+
+    def test_mutant_6(self):
+        self.assertNotEqual(Triangle.classify(4, 2, 2), Triangle.Type.INVALID)
+
+    def test_mutant_7(self):
+        self.assertNotEqual(Triangle.classify(-1, 2, 2), Triangle.Type.INVALID)
+
+    def test_mutant_4(self):
+        self.assertNotEqual(Triangle.classify(0, 0, 0), Triangle.Type.INVALID)
+
+    def test_mutant_4(self):
+        self.assertNotEqual(Triangle.classify(1, 2, 3), Triangle.Type.INVALID)
+
+
 
 if __name__ == '__main__':
     unittest.main()
