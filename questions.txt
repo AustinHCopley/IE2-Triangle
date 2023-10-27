@@ -5,4 +5,5 @@ Austin Copley, Naman Chopra
 3. Yes, in order to specifically target coverage, we had to identify ways to essentially reach every point in the isTriangle program, and the mutations were tested with more of an emphasis toward what could change in the code
 4. Some mutants might only change the program in such a subtle way so as to not change the overall execution. If we make a change that will never matter, the mutant survives.
 5. Mutant detection rate goes down becuase there aren't automatic checks already within the code
-6. 
+6. test case redundancy is when you create what appear to be the same test cases, but might have different orientation, order, or slight changes that might not be functional in nature, but could potentially have an effect when the code is mutated. Several of our test cases are redundant, but we should not remove them because when mutations are introduced, they can be useful to ensure that nothing slips through.
+7. equilateral: 6, isosceles: 7, invalid sides: 1, triangle inequality: 9
