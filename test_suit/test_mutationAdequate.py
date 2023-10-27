@@ -30,10 +30,10 @@ class TestMutationAdequate(unittest.TestCase):
     def test_mutant_7(self):
         self.assertNotEqual(Triangle.classify(-1, 2, 2), Triangle.Type.INVALID)
 
-    def test_mutant_4(self):
+    def test_mutant_8(self):
         self.assertNotEqual(Triangle.classify(0, 0, 0), Triangle.Type.INVALID)
 
-    def test_mutant_4(self):
+    def test_mutant_9(self):
         self.assertNotEqual(Triangle.classify(1, 2, 3), Triangle.Type.INVALID)
 
 
