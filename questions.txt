@@ -1,3 +1,8 @@
+Austin Copley, Naman Chopra
+
 1. 2 best practices that make testing easier are Modularity and Understandibility/Documentation
 2. statement coverage = 43%, decision coverage = 58%, mutation detection rate = 23.1%
-3. 
+3. Yes, in order to specifically target coverage, we had to identify ways to essentially reach every point in the isTriangle program, and the mutations were tested with more of an emphasis toward what could change in the code
+4. Some mutants might only change the program in such a subtle way so as to not change the overall execution. If we make a change that will never matter, the mutant survives.
+5. Mutant detection rate goes down becuase there aren't automatic checks already within the code
+6. 
